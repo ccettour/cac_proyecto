@@ -1,5 +1,5 @@
-paleta{
-    color:#60bdaf;
+paleta {
+    color: #60bdaf;
     color: #a1d8b1;
     color: #edfcc2;
     color: #f88aaf;
@@ -27,7 +27,8 @@ paleta{
     background-color: #edfcc2;
 }
 
-.nav-link.show, .nav-link:focus{
+.nav-link.show,
+.nav-link:focus {
     color: #f88aaf !important;
 }
 
@@ -42,17 +43,26 @@ body {
     min-height: 100vh;
 }
 
-main {
+.cuerpo {
     padding: 6rem;
 }
 
-h2{
-    color:#60bdaf;
+section {
+    padding-bottom: 6rem;
 }
 
-p{
+h2 {
+    color: #60bdaf;
+    text-align: center;
+}
+
+p {
     text-align: justify;
     margin: 0px;
+}
+
+span, .card-title {
+    color: #f88aaf;
 }
 
 .container {
@@ -62,19 +72,40 @@ p{
     align-items: center;
 }
 
-.col-carousel{
+.imagen-bg {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.texto {
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    margin-left: 45vw;
+    color: rgb(48, 48, 48);
+}
+
+
+
+.col-carousel {
     max-width: 600px;
 }
 
-.formulario{
+.formulario {
     max-width: 600px;
     border: #60bdaf solid 1px;
     border-radius: 15px;
     padding: 1rem;
     margin-top: 1rem;
 }
-  
-  
+
+
 
 /*BOTONES*/
 .btn-light {
