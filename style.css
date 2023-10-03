@@ -19,6 +19,7 @@ paleta {
 /* Estilo de color del texto */
 .navbar-nav li a {
     color: #f88aaf;
+    font-size: 18px;
 }
 
 /* Estilo de color del texto al pasar el mouse */
@@ -54,15 +55,18 @@ section {
 h2 {
     color: #60bdaf;
     text-align: center;
+    font-size: 30px;
 }
 
 p {
     text-align: justify;
+    font-size: 18px;
     margin: 0px;
 }
 
 span, .card-title {
     color: #f88aaf;
+    font-size: 24px;
 }
 
 .container {
