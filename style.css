@@ -1,18 +1,18 @@
 paleta {
     color: #60bdaf;
     color: #a1d8b1;
-    color: #edfcc2;
+    color: #f8f988;
     color: #f88aaf;
     color: rgb(48, 48, 48);
 }
 
 
 .navbar {
-    background-color: #edfcc2;
+    background-color: #f8f988;
 }
 
 .navbar .dropdown-menu {
-    background-color: #edfcc2;
+    background-color: #f8f988;
     border: #60bdaf solid 1px;
 }
 
@@ -25,7 +25,7 @@ paleta {
 /* Estilo de color del texto al pasar el mouse */
 .navbar-nav li a:hover {
     color: #60bdaf;
-    background-color: #edfcc2;
+    background-color: #f8f988;
 }
 
 .nav-link.show,
