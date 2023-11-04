@@ -48,7 +48,8 @@
   <section class="imagen-bg">
     <div class="texto">
       <h2>Le doy la bienvenida a este espacio</h1>
-      <p>Siéntase libre de recorrer la página para ver los productos confeccionados. Si le interesa algún producto en stock o realizar un pedido personalizado puede enviar un mensaje en la sección de <span>Contacto</span>.</p>
+        <p>Siéntase libre de recorrer la página para ver los productos confeccionados. Si le interesa algún producto en
+          stock o realizar un pedido personalizado puede enviar un mensaje en la sección de <a href="#contacto" class="link-contacto">Contacto</a>.</p>
     </div>
   </section>
 
@@ -139,33 +140,37 @@
       <div class="materiales">
         <div class="row">
           <div class="col-12 col-md-4">
-              <div class="card mb-2">
-                  <img src="img/algodon.png" class="card-img-top" alt="algodon">
-                  <div class="card-body">
-                      <h5 class="card-title">Hilo de algodón</h5>
-                      <p class="card-text">El algodón hace que el punto quede prieto, definido, compacto, lo que da un mejor acabado al proyecto. Su durabilidad es esencial para la creación de amigurumis.</p>
-                  </div>
+            <div class="card mb-2">
+              <img src="img/algodon.png" class="card-img-top" alt="algodon">
+              <div class="card-body">
+                <h5 class="card-title">Hilo de algodón</h5>
+                <p class="card-text">El algodón hace que el punto quede prieto, definido, compacto, lo que da un mejor
+                  acabado al proyecto. Su durabilidad es esencial para la creación de amigurumis.</p>
               </div>
+            </div>
           </div>
           <div class="col-12 col-md-4">
-              <div class="card mb-2">
-                  <img src="img/vellon.jpg" class="card-img-top" alt="vellon">
-                  <div class="card-body">
-                      <h5 class="card-title">Vellón siliconado</h5>
-                      <p class="card-text">Es un producto fabricado con fibras huecas de poliester, recubiero en silicona que le otrga una suavidad distintiva. El rebote es producto de la calidad de la fibra el recubrimiento en silicona.</p>
-                  </div>
+            <div class="card mb-2">
+              <img src="img/vellon.jpg" class="card-img-top" alt="vellon">
+              <div class="card-body">
+                <h5 class="card-title">Vellón siliconado</h5>
+                <p class="card-text">Es un producto fabricado con fibras huecas de poliester, recubiero en silicona que
+                  le otrga una suavidad distintiva. El rebote es producto de la calidad de la fibra el recubrimiento en
+                  silicona.</p>
               </div>
+            </div>
           </div>
           <div class="col-12 col-md-4">
-              <div class="card mb-2">
-                  <img src="img/agujas.jpg" class="card-img-top" alt="agujas">
-                  <div class="card-body">
-                      <h5 class="card-title">Agujas</h5>
-                      <p class="card-text">El tamaño de la aguja es determinante al momento de lograr un acabado más compacto o más suave. La elección dependerá del proyecto a realizar y del grosor del hilo.</p>
-                  </div>
+            <div class="card mb-2">
+              <img src="img/agujas.jpg" class="card-img-top" alt="agujas">
+              <div class="card-body">
+                <h5 class="card-title">Agujas</h5>
+                <p class="card-text">El tamaño de la aguja es determinante al momento de lograr un acabado más compacto
+                  o más suave. La elección dependerá del proyecto a realizar y del grosor del hilo.</p>
               </div>
+            </div>
           </div>
-      </div>
+        </div>
 
       </div>
     </section>
@@ -173,7 +178,7 @@
     <section class="formulario container-fluid align-items-center" id="contacto">
       <h2>Contactame</h2>
       <hr>
-      <form>
+      <form id="formContacto">
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="nombre" required>
@@ -184,9 +189,12 @@
         </div>
         <div class="mb-3">
           <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+          <textarea class="form-control" id="mensaje" rows="5" oninput="actualizarContador()" maxlength="200"
+            required></textarea>
         </div>
-        <button type="submit" class="btn btn-light">Enviar</button>
+        <p id="contadorCaracteres"></p>
+        <p id="cont_error" class="error-busqueda"></p>
+        <button type="submit" class="btn btn-light" id="botonEnviar">Enviar</button>
       </form>
     </section>
   </main>
@@ -197,6 +205,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
